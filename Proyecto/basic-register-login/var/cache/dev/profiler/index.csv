@@ -1,0 +1,15 @@
+27f832,::1,GET,http://localhost:8000/,1619212903,,200
+54ac1f,::1,GET,http://localhost:8000/favicon.ico,1619212904,424480,404
+424480,::1,GET,http://localhost:8000/favicon.ico,1619212904,,404
+8d9e2a,::1,GET,http://localhost:8000/registration,1619212917,,200
+9e8fe9,::1,POST,http://localhost:8000/registration,1619212993,,302
+998dbb,::1,GET,http://localhost:8000/,1619212993,,200
+7e5919,::1,POST,http://localhost:8000/,1619213006,,302
+cf5bbd,::1,GET,http://localhost:8000/list,1619213007,,200
+ddd84c,::1,GET,http://localhost:8000/list,1619213742,,200
+b2ce81,::1,GET,http://localhost:8000/logout,1619213748,,302
+3ecb75,::1,GET,http://localhost:8000/,1619213748,,200
+87a5be,::1,POST,http://localhost:8000/,1619213754,,302
+828326,::1,GET,http://localhost:8000/,1619213755,,200
+784f75,::1,POST,http://localhost:8000/,1619213760,,302
+181f9d,::1,GET,http://localhost:8000/list,1619213761,,200
