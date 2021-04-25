@@ -9,22 +9,28 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 
 class SecurityController extends AbstractController
 {
-    #[Route('/security', name: 'security')]
+
+    /**
+     * @Route("/{reactRouting}", name="home", defaults={"reactRouting": null})
+     */
+    public function index()
+    {
+        return $this->render('default/index.html.twig');
+    }
+    
+    /* #[Route('/security', name: 'security')]
     public function index(): Response
     {
         return $this->render('security/index.html.twig', [
             'controller_name' => 'SecurityController',
         ]);
-    }
+    } */
 
     /**
      * @Route("/", name="app_login")
      */
-    public function login(AuthenticationUtils $authenticationUtils): Response
+    /* public function login(AuthenticationUtils $authenticationUtils): Response
     {
-        // if ($this->getUser()) {
-        //     return $this->redirectToRoute('target_path');
-        // }
 
         // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
@@ -35,15 +41,15 @@ class SecurityController extends AbstractController
             'last_username' => $lastUsername,
             'error' => $error,
         ]);
-    }
+    } */
 
     /**
      * @Route("/logout", name="app_logout")
      */
-    public function logout()
+    /* public function logout()
     {
         throw new \LogicException(
             'This method can be blank - it will be intercepted by the logout key on your firewall.'
         );
-    }
+    } */
 }

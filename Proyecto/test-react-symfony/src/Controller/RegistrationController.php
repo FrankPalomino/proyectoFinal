@@ -21,7 +21,7 @@ class RegistrationController extends AbstractController
     /**
      * @Route("/registration", name="registration")
      */
-    public function index(Request $request)
+    /* public function index(Request $request)
     {
         $user = new User();
 
@@ -53,5 +53,5 @@ class RegistrationController extends AbstractController
             'form' => $form->createView(),
             'controller_name' => 'Sergi',
         ]);
-    }
+    } */
 }

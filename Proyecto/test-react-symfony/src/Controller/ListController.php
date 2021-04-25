@@ -11,7 +11,7 @@ class ListController extends AbstractController
     /**
      * @Route("/list", name="list")
      */
-    public function index(Request $request)
+    /* public function index(Request $request)
     {
         $companies = [
             'Apple' => '$1.16 trillion USD',
@@ -30,5 +30,5 @@ class ListController extends AbstractController
             'companies' => $companies,
             'controller_name' => 'Sergi',
         ]);
-    }
+    } */
 }
